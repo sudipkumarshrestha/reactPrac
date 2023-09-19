@@ -6,13 +6,11 @@ import React, { useState } from 'react';
 import { AddTodo } from './myComponents/AddTodo';
 import {UseStateEx} from './myComponents/UseStateEx'
 
+
+
 function App() {
   const onDelete = (todo) => {
     console.log("I am ondelete", todo);
-    //does not work like this in react
-    // let index=todos.indexOf(todo);
-    // todos.splice(index,1);
-
     setTodos(todos.filter((e) => {
       return e !== todo;
     }))
