@@ -5,6 +5,8 @@ import { Footer } from './myComponents/Footer';
 import React, { useState } from 'react';
 import { AddTodo } from './myComponents/AddTodo';
 import {UseStateEx} from './myComponents/UseStateEx'
+import {StatePrac} from './myComponents/StatePrac'
+import {Entries} from './myComponents/Entries'
 
 
 
@@ -56,9 +58,11 @@ function App() {
   return (
     <>
       <Header searchBar={false} />
+      <Entries />
       <AddTodo addTodo={addTodo} />
       <Todos todos={todos} onDelete={onDelete} />
       <UseStateEx />
+      <StatePrac />
       <Footer />
     </>
   );
